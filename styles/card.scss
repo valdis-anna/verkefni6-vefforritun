@@ -3,11 +3,10 @@
 .card {
   display: flex;
   flex-direction: column;
-
   width: 100%;
 }
 
-@media (min-width: 700px) {
+@media (width >= 700px) {
   .card {
     grid-column: span 5;
   }
@@ -19,7 +18,6 @@
 
 .card > .image img {
   display: block;
-
   border-top-left-radius: var(--border-radius-regular);
   border-top-right-radius: var(--border-radius-regular);
   width: 100%;
@@ -30,11 +28,9 @@
 
 .card > .content {
   flex: 1;
-
   display: flex;
   flex-direction: column;
   gap: var(--spacing);
-
   padding: calc(var(--spacing) / 2);
   border: var(--border-regular);
   border-top: 0;
@@ -64,6 +60,5 @@
   display: flex;
   justify-content: space-between;
   gap: var(--spacing);
-
   margin-top: var(--spacing);
 }
